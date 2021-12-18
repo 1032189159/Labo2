@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         findViewById<Button>(R.id.button_current_tmp).setOnClickListener {
             lifecycleScope.launch(Dispatchers.IO) {
-                model.getTemperature("Kuba")
+                model.getTemperature("Moscow")
             }
         }
 
